@@ -1,0 +1,5 @@
+{
+  "cores_per_replica": 8,
+  "model_dir": "tuned_to_quotes",
+  "bucket": "gs://bucket_for_tpu_gptj"
+}
