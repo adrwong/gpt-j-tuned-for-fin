@@ -22,10 +22,10 @@
   "tpu_size": 256,
 
   "bucket": "bucket_for_tpu_gptj",
-  "model_dir": "tuned_to_quotes",
+  "model_dir": "tuned_to_finbase",
 
-  "train_set": "quotes.train.index",
-  "val_set": "quotes.val.index",
+  "train_set": "fin.train.index",
+  "val_set": "",
 
   "eval_harness_tasks": [
 
@@ -36,7 +36,7 @@
   "ckpt_every": 500,
   "keep_every": 10000,
 
-  "name": "tuned_to_quotes",
+  "name": "tuned_to_base",
   "wandb_project": "mesh-transformer-jax",
   "comment": ""
 }
