@@ -1,0 +1,22 @@
+2021-11-01 04:58:53,007 INFO    MainThread:91165 [wandb_setup.py:_flush():71] setting env: {}
+2021-11-01 04:58:53,007 INFO    MainThread:91165 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-11-01 04:58:53,007 INFO    MainThread:91165 [wandb_init.py:_log_setup():357] Logging user logs to /home/wongs/gpt-j-tuned-for-quotes/wandb/run-20211101_045853-13h4jgje/logs/debug.log
+2021-11-01 04:58:53,007 INFO    MainThread:91165 [wandb_init.py:_log_setup():358] Logging internal logs to /home/wongs/gpt-j-tuned-for-quotes/wandb/run-20211101_045853-13h4jgje/logs/debug-internal.log
+2021-11-01 04:58:53,008 INFO    MainThread:91165 [wandb_init.py:init():390] calling init triggers
+2021-11-01 04:58:53,008 INFO    MainThread:91165 [wandb_init.py:init():395] wandb.init called with sweep_config: {}
+config: {'layers': 28, 'd_model': 4096, 'n_heads': 16, 'n_vocab': 50400, 'norm': 'layernorm', 'pe': 'rotary', 'pe_rotary_dims': 64, 'seq': 2048, 'cores_per_replica': 8, 'per_replica_batch': 1, 'gradient_accumulation_steps': 16, 'warmup_steps': 1000, 'anneal_steps': 10000, 'lr': 0.00012, 'end_lr': 1.2e-05, 'weight_decay': 0.1, 'total_steps': 11000, 'tpu_size': 256, 'bucket': 'bucket_for_tpu_gptj', 'model_dir': 'tuned_to_finbase_2', 'train_set': 'fin.train.index', 'val_set': {}, 'eval_harness_tasks': [], 'val_batches': 622, 'val_every': 500, 'ckpt_every': 500, 'keep_every': 10000, 'name': 'tuned_to_base', 'wandb_project': 'mesh-transformer-jax', 'comment': '', 'optimizer': GradientTransformation(init=<function chain.<locals>.init_fn at 0x7f161f26cee0>, update=<function chain.<locals>.update_fn at 0x7f161f26cf70>)}
+2021-11-01 04:58:53,008 INFO    MainThread:91165 [wandb_init.py:init():435] starting backend
+2021-11-01 04:58:53,008 INFO    MainThread:91165 [backend.py:_multiprocessing_setup():95] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-11-01 04:58:53,616 INFO    MainThread:91165 [backend.py:ensure_launched():199] starting backend process...
+2021-11-01 04:58:54,259 INFO    MainThread:91165 [backend.py:ensure_launched():204] started backend process with pid: 93250
+2021-11-01 04:58:54,261 INFO    MainThread:91165 [wandb_init.py:init():444] backend started and connected
+2021-11-01 04:58:54,268 INFO    MainThread:91165 [wandb_init.py:init():503] updated telemetry
+2021-11-01 04:58:55,743 INFO    MainThread:91165 [wandb_init.py:init():533] communicating current version
+2021-11-01 04:58:55,783 INFO    MainThread:91165 [wandb_init.py:init():538] got version response 
+2021-11-01 04:58:55,783 INFO    MainThread:91165 [wandb_init.py:init():548] communicating run to backend with 30 second timeout
+2021-11-01 04:58:55,965 INFO    MainThread:91165 [wandb_init.py:init():576] starting run threads in backend
+2021-11-01 04:58:57,125 INFO    MainThread:91165 [wandb_run.py:_console_start():1693] atexit reg
+2021-11-01 04:58:57,126 INFO    MainThread:91165 [wandb_run.py:_redirect():1567] redirect: SettingsConsole.REDIRECT
+2021-11-01 04:58:57,127 INFO    MainThread:91165 [wandb_run.py:_redirect():1572] Redirecting console.
+2021-11-01 04:58:57,129 INFO    MainThread:91165 [wandb_run.py:_redirect():1628] Redirects installed.
+2021-11-01 04:58:57,129 INFO    MainThread:91165 [wandb_init.py:init():603] run started, returning control to user process

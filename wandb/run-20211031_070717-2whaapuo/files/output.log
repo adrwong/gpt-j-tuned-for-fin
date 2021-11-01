@@ -1,0 +1,82 @@
+
+saving a checkpoint for step 1
+Wrote checkpoint in 996.538s
+saving a checkpoint for step 501
+Wrote checkpoint in 906.385s
+saving a checkpoint for step 1001
+Wrote checkpoint in 799.18s
+saving a checkpoint for step 1501
+Wrote checkpoint in 784.787s
+deleting checkpoint 1
+saving a checkpoint for step 2001
+Wrote checkpoint in 729.904s
+deleting checkpoint 501
+saving a checkpoint for step 2501
+Wrote checkpoint in 709.943s
+deleting checkpoint 1001
+saving a checkpoint for step 3001
+Wrote checkpoint in 795.967s
+deleting checkpoint 1501
+saving a checkpoint for step 3501
+Wrote checkpoint in 707.441s
+deleting checkpoint 2001
+saving a checkpoint for step 4001
+Wrote checkpoint in 677.713s
+deleting checkpoint 2501
+saving a checkpoint for step 4501
+Wrote checkpoint in 693.949s
+deleting checkpoint 3001
+saving a checkpoint for step 5001
+Wrote checkpoint in 636.64s
+deleting checkpoint 3501
+saving a checkpoint for step 5501
+Wrote checkpoint in 708.75s
+deleting checkpoint 4001
+saving a checkpoint for step 6001
+Wrote checkpoint in 632.649s
+deleting checkpoint 4501
+saving a checkpoint for step 6501
+Wrote checkpoint in 661.788s
+deleting checkpoint 5001
+saving a checkpoint for step 7001
+Wrote checkpoint in 661.323s
+deleting checkpoint 5501
+saving a checkpoint for step 7501
+Wrote checkpoint in 656.827s
+deleting checkpoint 6001
+saving a checkpoint for step 8001
+Wrote checkpoint in 719.099s
+deleting checkpoint 6501
+saving a checkpoint for step 8501
+Wrote checkpoint in 655.769s
+deleting checkpoint 7001
+saving a checkpoint for step 9001
+Wrote checkpoint in 642.484s
+deleting checkpoint 7501
+saving a checkpoint for step 9501
+Wrote checkpoint in 684.992s
+deleting checkpoint 8001
+Traceback (most recent call last):
+  File "device_train.py", line 327, in <module>
+    loss, last_loss, grad_norm, grad_norm_micro = train_step(
+  File "device_train.py", line 114, in train_step
+    loss, last_loss, grad_norm, grad_norm_micro = network.train(inputs)
+  File "/home/wongs/gpt-j-tuned-for-quotes/mesh_transformer/transformer_shard.py", line 302, in train
+    loss = np.array(loss)
+  File "/home/wongs/.local/lib/python3.8/site-packages/jax/interpreters/xla.py", line 1203, in __array__
+    return np.asarray(self._value, dtype=dtype)
+  File "/home/wongs/.local/lib/python3.8/site-packages/jax/interpreters/pxla.py", line 547, in _value
+    npy_value[self.indices[i]] = self.device_buffers[i].to_py()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "device_train.py", line 327, in <module>
+    loss, last_loss, grad_norm, grad_norm_micro = train_step(
+  File "device_train.py", line 114, in train_step
+    loss, last_loss, grad_norm, grad_norm_micro = network.train(inputs)
+  File "/home/wongs/gpt-j-tuned-for-quotes/mesh_transformer/transformer_shard.py", line 302, in train
+    loss = np.array(loss)
+  File "/home/wongs/.local/lib/python3.8/site-packages/jax/interpreters/xla.py", line 1203, in __array__
+    return np.asarray(self._value, dtype=dtype)
+  File "/home/wongs/.local/lib/python3.8/site-packages/jax/interpreters/pxla.py", line 547, in _value
+    npy_value[self.indices[i]] = self.device_buffers[i].to_py()
+KeyboardInterrupt
