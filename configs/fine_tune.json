@@ -12,17 +12,17 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 16,
 
-  "warmup_steps": 500,
-  "anneal_steps": 4500,
+  "warmup_steps": 300,
+  "anneal_steps": 3000,
   "lr": 1.2e-4,
   "end_lr": 1.2e-5,
   "weight_decay": 0.1,
-  "total_steps": 5000,
+  "total_steps": 3300,
 
   "tpu_size": 256,
 
-  "bucket": "bucket_for_tpu_gptj",
-  "model_dir": "tuned_to_finbase_2",
+  "bucket": "gptj-base",
+  "model_dir": "tuned_to_finbase_3",
 
   "train_set": "fin.train.index",
   "val_set": {},
@@ -32,11 +32,11 @@
   ],
 
   "val_batches": 622,
-  "val_every": 500,
-  "ckpt_every": 500,
-  "keep_every": 10000,
+  "val_every": 300,
+  "ckpt_every": 300,
+  "keep_every": 900,
 
-  "name": "tuned_to_base",
-  "wandb_project": "mesh-transformer-jax",
+  "name": "tuned_to_finbase_3",
+  "wandb_project": "mesh-transformer-jax-3",
   "comment": ""
 }

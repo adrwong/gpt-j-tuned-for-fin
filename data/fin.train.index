@@ -1,1 +1,2 @@
-gs://bucket_for_tpu_gptj/financial_data/base_model/basedata_241.tfrecords
+gs://gptj-base/train_data_tf/basedata_241.tfrecords
+gs://gptj-base/train_data_tf/stock_data_312.tfrecords

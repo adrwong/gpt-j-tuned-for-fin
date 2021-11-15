@@ -23,9 +23,6 @@
 
   "tpu_size": 256,
 
-  "bucket": "bucket_for_tpu_gptj",
-  "model_dir": "tuned_to_quotes",
-
   "train_set": "quotes.train.index",
   "val_set": {},
 
