@@ -1,0 +1,122 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.6
+    framework: huggingface
+    huggingface_version: 4.12.3
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+    start_time: 1637011120
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 11
+      - 12
+      3:
+      - 13
+      - 16
+      4: 3.8.5
+      5: 0.12.6
+      6: 4.12.3
+      8:
+      - 5
+anneal_steps:
+  desc: null
+  value: 3000
+bucket:
+  desc: null
+  value: gptj-base
+ckpt_every:
+  desc: null
+  value: 300
+comment:
+  desc: null
+  value: ''
+cores_per_replica:
+  desc: null
+  value: 8
+d_model:
+  desc: null
+  value: 4096
+end_lr:
+  desc: null
+  value: 1.2e-05
+eval_harness_tasks:
+  desc: null
+  value: []
+gradient_accumulation_steps:
+  desc: null
+  value: 16
+keep_every:
+  desc: null
+  value: 900
+layers:
+  desc: null
+  value: 28
+lr:
+  desc: null
+  value: 0.00012
+model_dir:
+  desc: null
+  value: tuned_to_finbase_3
+n_heads:
+  desc: null
+  value: 16
+n_vocab:
+  desc: null
+  value: 50400
+name:
+  desc: null
+  value: tuned_to_finbase_3
+norm:
+  desc: null
+  value: layernorm
+optimizer:
+  desc: null
+  value:
+  - optax._src.combine.chain.<locals>.init_fn
+  - optax._src.combine.chain.<locals>.update_fn
+pe:
+  desc: null
+  value: rotary
+pe_rotary_dims:
+  desc: null
+  value: 64
+per_replica_batch:
+  desc: null
+  value: 1
+seq:
+  desc: null
+  value: 2048
+total_steps:
+  desc: null
+  value: 3300
+tpu_size:
+  desc: null
+  value: 256
+train_set:
+  desc: null
+  value: fin.train.index
+val_batches:
+  desc: null
+  value: 622
+val_every:
+  desc: null
+  value: 300
+val_set:
+  desc: null
+  value: {}
+wandb_project:
+  desc: null
+  value: mesh-transformer-jax-3
+warmup_steps:
+  desc: null
+  value: 300
+weight_decay:
+  desc: null
+  value: 0.1
