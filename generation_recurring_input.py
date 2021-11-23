@@ -1,8 +1,8 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import sys
 
-model = AutoModelForCausalLM.from_pretrained("EleutherAI/gpt-j-6B")
-tokenizer = AutoTokenizer.from_pretrained('../../tuned_to_finbase2_slim_hf', local_files_only=True)
+model = AutoModelForCausalLM.from_pretrained("../tuned_to_finbase_3_slim_hf")
+tokenizer = AutoTokenizer.from_pretrained('EleutherAI/gpt-j-6B', local_files_only=True)
 
 # tokenizer = GPT2Tokenizer.from_pretrained('EleutherAI/gpt-j-6B')
 # model = GPTJModel.from_pretrained('../../tuned_to_finbase2_slim_hf', local_files_only=True)
