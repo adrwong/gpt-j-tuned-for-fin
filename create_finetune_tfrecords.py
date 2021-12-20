@@ -286,5 +286,6 @@ if __name__ == "__main__":
     if args.output_dir:
         os.makedirs(args.output_dir, exist_ok=True)
     files = get_files(args.input_dir)
+    # print(files)
 
     results = create_tfrecords(files, args)
