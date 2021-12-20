@@ -12,7 +12,7 @@ print("retrieving clean ect...")
 count = 0
 for item in item_details_ECT:
     #print(item['ticker_name'],item['text'])
-    filename = "./data/ect/"+ str(item['_id']) + ".txt"
+    filename = "../data_for_gptj/ect/"+ str(item['_id']) + ".txt"
     if not os.path.exists(os.path.dirname(filename)):
         try:
             os.makedirs(os.path.dirname(filename))
@@ -31,27 +31,26 @@ for item in item_details_ECT:
 print("retrieving clean ect completed")
 
 
-# item_details_News = collection_News.find()
-# print("retrieving news...")
-# for item in item_details_News:
-#     #print(item['ticker_name'],item['text'])
-#     filename = "./data/news/"+ str(item['_id']) + ".txt"
-#     if not os.path.exists(os.path.dirname(filename)):
-#         try:
-#             os.makedirs(os.path.dirname(filename))
-#         except OSError as exc: # Guard against race condition
-#             if exc.errno != errno.EEXIST:
-#                 raise
-#     fnews = open(filename, "a", encoding='utf-8')
-#     fnews.write(str(item['title']))
-#     fnews.write(str(item['description']))
-#     fnews.write(str(item['content']))
-#     fnews.write("<|endoftext|>\n")
-#     fnews.close()
-#     count += 1
-#     if count % 1000 == 0:
-#         print(str(count + 1) + " documents have been processed")
+item_details_News = collection_News.find()
+print("retrieving news...")
+for item in item_details_News:
+    #print(item['ticker_name'],item['text'])
+    filename = "../data_for_gptj/news/"+ str(item['_id']) + ".txt"
+    if not os.path.exists(os.path.dirname(filename)):
+        try:
+            os.makedirs(os.path.dirname(filename))
+        except OSError as exc: # Guard against race condition
+            if exc.errno != errno.EEXIST:
+                raise
+    fnews = open(filename, "a", encoding='utf-8')
+    fnews.write(str(item['title']))
+    fnews.write(str(item['description']))
+    fnews.write(str(item['content']))
+    fnews.write("<|endoftext|>\n")
+    fnews.close()
+    count += 1
+    if count % 1000 == 0:
+        print(str(count + 1) + " documents have been processed")
 
-# print("retrieving news completed")
+print("retrieving news completed")
 
-#stock - eikon_description -> ticker_name, text

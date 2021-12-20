@@ -1,2 +1,2 @@
-gs://gptj-base/train_data_tf/basedata_241.tfrecords
-gs://gptj-base/train_data_tf/stock_data_312.tfrecords
+gs://gptj-base/train_data_tf/ect_178061.tfrecords
+gs://gptj-base/train_data_tf/news_160023.tfrecords
