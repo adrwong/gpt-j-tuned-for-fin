@@ -22,7 +22,7 @@
   "tpu_size": 256,
 
   "bucket": "gptj-base",
-  "model_dir": "tuned_to_finbase_3",
+  "model_dir": "tuned_to_finbase_4",
 
   "train_set": "fin.train.index",
   "val_set": {},
@@ -36,7 +36,7 @@
   "ckpt_every": 300,
   "keep_every": 900,
 
-  "name": "tuned_to_finbase_3",
-  "wandb_project": "mesh-transformer-jax-3",
+  "name": "tuned_to_finbase_4",
+  "wandb_project": "mesh-transformer-jax-4",
   "comment": ""
 }
