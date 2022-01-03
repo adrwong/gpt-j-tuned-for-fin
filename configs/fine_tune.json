@@ -22,10 +22,10 @@
   "tpu_size": 256,
 
   "bucket": "gptj-base",
-  "model_dir": "tuned_to_finbase_4",
+  "model_dir": "gptk_1",
 
   "train_set": "fin.train.index",
-  "val_set": {},
+  "val_set": {"news_cat": "fin.val.index"},
   
   "eval_harness_tasks": [
 
@@ -36,7 +36,7 @@
   "ckpt_every": 300,
   "keep_every": 900,
 
-  "name": "tuned_to_finbase_4",
-  "wandb_project": "mesh-transformer-jax-4",
+  "name": "gptk_1",
+  "wandb_project": "gptk_1",
   "comment": ""
 }
